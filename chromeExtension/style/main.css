@@ -1,0 +1,171 @@
+:root {
+    --background:rgb(46, 46, 46);
+    --color-primary:rgb(112, 112, 112);
+    --color-secondary:rgb(21, 167, 106);
+    --color-tertiary:rgb(250, 121, 16);
+
+    --color-white:rgb(210, 210, 210);
+}
+
+html {
+    background-color: var(--background);
+    border-style: solid;
+    border-radius: 1px;
+    border-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
+
+div {
+    color: var(--color-primary);
+    border-style: none;
+    border-radius: 1px;
+    border-color: var(--color-primary);
+}
+
+h1 {
+    color: var(--color-secondary);
+}
+h2 {
+    color: var(--color-secondary);
+}
+.logo2{
+    color: transparent;  
+    text-shadow: 0 0 0 var(--color-secondary);
+}
+
+button {
+    width: 100px;
+    height: 40px;
+
+    border-style: solid;
+    border-color: var(--color-secondary);
+    border-radius: 15px;
+
+    color: var(--color-secondary);
+    background-color: var(--background);
+}
+button:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    text-decoration: underline;
+    background-image: none;
+    animation: HoverWiggle 0.3s 2 alternate;
+    cursor: pointer;
+}
+@keyframes HoverWiggle {
+    100% {
+        transform: rotate(7deg);
+    }
+    0% {
+        transform: rotate(0);
+    }
+
+}
+button:active{
+    background-color: var(--color-white);
+}
+
+input[type=text] {
+    width: 200px;
+    height: 40px;
+
+    border-style: solid;
+    border-color: var(--color-secondary);
+    border-radius: 15px;
+
+    color: var(--background);
+    background-color: var(--color-white);
+}
+
+.textSubmitButton{
+    position: relative;
+    right: 110px;
+    top: 2px;
+}
+
+a {    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
+    
+}
+a:hover {    
+    text-decoration: underline;
+    font-weight: bolder;
+    color: var(--color-tertiary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#settingsButton{
+    position: absolute;
+    right: 10px;
+    width: 50px;
+}
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 250px; /* Full-width */
+    height: 20px; /* Specified height */
+    background: var(--color-primary); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 15px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: var(--color-secondary); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: var(--color-secondary); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
+

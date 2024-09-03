@@ -1,0 +1,26 @@
+{
+    "name": "Tiktok Feed Remover",
+    "version": "0.0.1",
+    "description": "Removes specific TikTok feed elements",
+    "manifest_version": 3,
+    "author": "Julian Leser",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "TikTok Feed Remover"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.tiktok.com/*"],
+            "js": ["js/main.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "128": "favicon.ico",
+        "48": "favicon.ico",
+        "32": "favicon-32x32.png",
+        "16": "favicon-16x16.png"
+    }
+}
