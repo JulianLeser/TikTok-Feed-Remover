@@ -1,5 +1,7 @@
 if (window.location.href === "https://www.tiktok.com/" || window.location.href === "https://www.tiktok.com") {
     window.location.href = "https://www.tiktok.com/following/";
+} else if (window.location.href === "https://www.tiktok.com/explore" || window.location.href === "https://www.tiktok.com/explore") {
+    window.location.href = "https://www.tiktok.com/following/";
 } else if (window.location.href.includes("tiktok.com")) {
     console.log("Running on TikTok:", window.location.href);
 

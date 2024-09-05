@@ -1,7 +1,7 @@
 {
     "name": "Tiktok Feed Remover",
     "version": "0.0.1",
-    "description": "Removes specific TikTok feed elements",
+    "description": "Removes the most addictive TikTok feed elements",
     "manifest_version": 3,
     "author": "Julian Leser",
     "action": {
